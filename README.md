@@ -1,4 +1,2 @@
 # TheOdinProject
-Personal repo for all Odin project stuff
-
-Hello Odin!
+Personal repo to contain everything i learn during my Web-Dev Journey
