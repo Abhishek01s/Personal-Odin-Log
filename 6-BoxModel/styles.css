@@ -1,0 +1,26 @@
+html{
+    background-color: #c0ffee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.alert,.info{
+    display: inline-block;
+    padding: 8px;
+    margin-top: 0;
+}
+
+.alert{
+    background-color: crimson;
+}
+
+.info{
+    background-color: aquamarine;
+}
+
+.info h3{
+    margin: 0;
+}

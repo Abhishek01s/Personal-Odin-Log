@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>6 | Box Model</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Box Model</h1>
+        <strong>Every single thing on a webpage is a rectangular box.</strong>
+        <p>These boxes can have other boxes in them and can sit alongside one another.</p>
+        <p>There are many ways to manipulate the size of these boxes, and the space between them</p>
+        <ul>
+            <li><em>padding</em> increases the space between the border of a box and the content of the box.</li>
+            <li><em>border</em> adds space between the margin and the padding.</li>
+            <li>margin increases the space between the borders of a box and the borders of adjacent boxes.</li>
+        </ul>
+        <h2>Block vs Inline</h2>
+        <p>By default, block elements will appear on the page stacked atop each other, each new element starting on a new line.</p>
+        <p>Inline elements, however, do not start on a new line. They appear in line with whatever elements they are placed beside.</p>
+        <p class="alert">Padding and margin behave differently on inline elements. In general, you do not want to try to put extra padding or margin on inline elements.</p>
+        <div class="info">
+            <h3>inline-block</h3>
+            <p>Inline-block elements behave like inline elements, but with block-style padding and margin.</p>
+        </div>
+        <h2>Divs & Spans</h2>
+        <p>Div is a block-level element by default. It is commonly used as a container element to group other elements.</p>
+        <p>Divs allow us to divide the page into different blocks and apply styling to those blocks.</p>
+        <p>Span is an inline-level element by default. It can be used to group text content and inline HTML elements for styling and should only be used when no other semantic HTML element is appropriate.</p>
+    </body>
+</html>

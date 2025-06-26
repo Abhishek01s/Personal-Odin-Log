@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>5 | CSS Intro</title>
+        <!-- External CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Internal CSS -->
+        <style>
+            html{background-color: #c0ffee;}
+        </style>
+    </head>
+    <body>
+        <h1>CSS Intro</h1>
+        <h2>Selectors</h2>
+        <!-- Inline CSS -->
+        <ul style="list-style: circle;">
+            <li>Universal selector will select all elements (as in the whole document), hence the name “universal”, and the syntax for it is a simple asterisk (*)</li>
+            <li>Type selector (or Element selector) will select all elements of the given element type, and the syntax is just the name of the element</li>
+            <li>Class selectors will select all elements with the given class, which is an attribute you place on an HTML element, and the syntax is a period (.) immediately followed by the value of the class attribute</li>
+            <li>ID selector select an element with the given ID, which is another attribute you place on an HTML element. The major difference between classes and IDs is that an element can only have one ID. For IDs, we use a hashtag (#) immediately followed by the value of the ID attribute.</li>
+        </ul>
+        <p>To cut down on the repetition, we can group selectors together as a comma-separated (,) list</p>
+        <p>We can chain selectors together in our CSS like so: selector1selector2</p>
+        <h2>Combinators</h2>
+        <p>Descendant combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc.) that matches the previous selector</p>
+        <p>it is represented in CSS by a single space (" ") between selectors.</p>
+        <h2>Specificity</h2>
+        <p>A CSS declaration that is more specific will take precedence over less specific ones.</p>
+        <p>while each type of selector has its own specificity level that contributes to how specific a declaration is. Other selectors contribute to specificity, but we’re focusing only on the ones we’ve gone over so far</p>
+        <ol>
+            <li>ID selectors</li>
+            <li>Class selectors</li>
+            <li>Type selectors</li>
+        </ol>
+        <p>Specificity will only be taken into account when an element has multiple, conflicting declarations targeting it, sort of like a tie-breaker.</p>
+        <h2>Inheritance</h2>
+        <p>Certain CSS properties that, when applied to an element, are inherited by that element's descendants, even if we don't explicitly write a rule for those descendants.</p>
+        <p>Typography-based properties (<em>color</em>, <em>font-size</em>, <em>font-family</em>, etc.) are usually inherited, while most other properties aren't.</p>
+        <h2>Rule order</h2>
+        <p>Ffter every other factor has been taken into account, if there are still multiple conflicting rules targeting an element.</p>
+        <p>Whichever rule was the <em>last</em> defined is the winner.</p>
+    </body>
+</html>
